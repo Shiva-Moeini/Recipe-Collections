@@ -1,0 +1,656 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-US-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <title>Recipe Collections</title>
+    <style>
+      section {
+        padding: 60px 0;
+      }
+    </style>
+  </head>
+  <body>
+    <!--navbar-->
+    <nav class="navbar navbar-expand-md navbar-light">
+      <div class="container-xxl">
+        <a href="#intro" class="navbar-brand">
+          <span class="fw-bold text-secondary">
+            <i class="bi bi-fire"></i> Kitchen Chronicles</span
+          >
+        </a>
+        <!--toggle btn for mobile nav-->
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#main-nav"
+          aria-controls="main-nav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!--navbar links-->
+
+        <div
+          class="collapse navbar-collapse justify-content-end align-center"
+          id="main-nav"
+        >
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="#topics">What's cooking inside</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#stories">Stories</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Get in Touch</a>
+            </li>
+            <li class="nav-item d-md-none">
+              <a class="nav-link" href="#pricing">Pricing</a>
+            </li>
+            <li class="nav-item ms-2 d-none d-md-inline">
+              <a class="btn btn-secondary" href="#pricing">buy now</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!--main image & intro text-->
+    <section id="intro">
+      <div class="container-lg">
+        <div class="row justify-content-center align-items-center">
+          <div class="col-md-5 text-center text-md-start">
+            <h1>
+              <div class="display-2">Whisking Up Memories</div>
+              <div class="display-5 text-muted">A Journey Through Food</div>
+            </h1>
+            <p class="lead my-4 text-muted">
+              Delicious Recipes to Bring Your Kitchen to Life.
+            </p>
+            <a href="#pricing" class="btn btn-secondary btn-lg">Buy Now</a>
+            <!--offcanvas-->
+            <a
+              href="#sidebar"
+              class="d-block mt-3"
+              data-bs-toggle="offcanvas"
+              role="button"
+              aria-controls="sidebar"
+              >Find Your Next Flavor Adventure</a
+            >
+          </div>
+          <div class="col-md-5 text-center d-none d-md-block">
+            <!--tooltip-->
+            <span
+              class="tt"
+              data-bs-placement="bottom"
+              title="Recipe Collections"
+            >
+              <img
+                class="img-fluid"
+                src="./assets/book.jpg"
+                alt="Book"
+              />
+            </span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--pricing plans-->
+
+    <section id="pricing" class="bg-light mt-5">
+      <div class="container-lg">
+        <div class="text-center">
+          <h2>Recipe Collections</h2>
+          <p class="lead text-muted">Find Your Perfect Cooking Adventure</p>
+        </div>
+
+        <div class="row my-5 align-items-center justify-content-center g-0">
+          <div class="col-8 col-lg-4 col-xl-3">
+            <div class="card border-0">
+              <div class="card-body text-center py-4">
+                <h4 class="card-title">Starter Edition</h4>
+                <p class="lead card-subtitle">Perfect for Beginners</p>
+                <p class="display-5 my-4 text-primary fw-bold">$12.99</p>
+                <p class="card-text mx-5 text-muted d-none d-lg-block">
+                  30+ Starter Recipes Basic Cooking Techniques
+                </p>
+                <a href="#" class="btn btn-outline-primary btn-lg mt-3"
+                  >Buy Now</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col-9 col-lg-4">
+            <div class="card border-primary border-2">
+              <div class="card-header text-center text-primary">
+                Most Popular
+              </div>
+              <div class="card-body text-center py-5">
+                <h4 class="card-title">Complete Edition</h4>
+                <p class="lead card-subtitle">Most Popular Collection</p>
+                <p class="display-4 my-4 text-primary fw-bold">$18.99</p>
+                <p class="card-text mx-5 text-muted d-none d-lg-block">
+                  100+ Classic Recipes Video Tutorials Included
+                </p>
+                <a href="#" class="btn btn-outline-primary btn-lg mt-3"
+                  >Buy Now</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col-8 col-lg-4 col-xl-3">
+            <div class="card border-0">
+              <div class="card-body text-center py-4">
+                <h4 class="card-title">Ultimate Edition</h4>
+                <p class="lead card-subtitle">Advanced Techniques</p>
+                <p class="display-5 my-4 text-primary fw-bold">$24.99</p>
+                <p class="card-text mx-5 text-muted d-none d-lg-block">
+                  150+ Premium Recipes Seasonal Menu Plans
+                </p>
+                <a href="#" class="btn btn-outline-primary btn-lg mt-3"
+                  >Buy Now</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--topics at a glance-->
+
+    <section id="topics">
+      <div class="container-md">
+        <div class="text-center">
+          <h2>What's Cooking Inside...</h2>
+          <p class="lead text-muted">
+            A quick glance at the topics you'll learn
+          </p>
+        </div>
+
+        <div class="row my-5 g-5 justify-content-around align-items-center">
+          <div class="col-6 col-lg-4">
+            <img
+              src="./assets/ebook.jpg"
+              class="img-fluid"
+              alt="ebook"
+            />
+          </div>
+          <div class="col-lg-6">
+            <!--accordion-->
+            <div class="accordion" id="chapters">
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="heading-1">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#chapter-1"
+                    aria-expanded="false"
+                    aria-controls="chapter-1"
+                  >
+                    Chapter 1 - Kitchen Essentials & Basic Techniques
+                  </button>
+                </h2>
+                <div
+                  id="chapter-1"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="heading-1"
+                  data-bs-parent="#chapters"
+                >
+                  <div class="accordion-body">
+                    <p>
+                      Master the fundamentals that every home chef needs. From
+                      knife skills to mise en place, learn the essential
+                      techniques that will form the foundation of your culinary
+                      journey. Discover how to properly stock your pantry,
+                      choose the right tools, and organize your kitchen for
+                      maximum efficiency. Perfect for beginners and experienced
+                      cooks looking to refine their basics.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <!--accordion2-->
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="heading-2">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#chapter-2"
+                    aria-expanded="false"
+                    aria-controls="chapter-2"
+                  >
+                    Chapter 2 - Breakfast & Brunch Favorites
+                  </button>
+                </h2>
+                <div
+                  id="chapter-2"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="heading-2"
+                  data-bs-parent="#chapters"
+                >
+                  <div class="accordion-body">
+                    <p>
+                      Start your day with joy! From fluffy pancakes to savory
+                      omelets, explore recipes that will transform your
+                      mornings. Learn the secrets to perfect coffee brewing,
+                      master the art of egg cookery, and create beautiful
+                      breakfast boards that will impress your weekend guests.
+                      Includes make-ahead options for busy families.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <!--accordion3-->
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="heading-3">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#chapter-3"
+                    aria-expanded="false"
+                    aria-controls="chapter-3"
+                  >
+                    Chapter 3 - Main Course Masterpieces
+                  </button>
+                </h2>
+                <div
+                  id="chapter-3"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="heading-3"
+                  data-bs-parent="#chapters"
+                >
+                  <div class="accordion-body">
+                    <p>
+                      Elevate your dinner game with show-stopping main dishes.
+                      From quick weeknight meals to impressive dinner party
+                      centerpieces, discover recipes that bring people together.
+                      Learn temperature control, timing techniques, and plating
+                      skills that will make every meal feel restaurant-worthy.
+                      Features both meat-based and vegetarian options.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <!--accordion4-->
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="heading-4">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#chapter-4"
+                    aria-expanded="false"
+                    aria-controls="chapter-4"
+                  >
+                    Chapter 4 - Desserts & Sweet Treats
+                  </button>
+                </h2>
+                <div
+                  id="chapter-4"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="heading-4"
+                  data-bs-parent="#chapters"
+                >
+                  <div class="accordion-body">
+                    <p>
+                      End every meal on a high note with our collection of
+                      irresistible desserts. Whether you're craving chocolate
+                      indulgence or fruit-based delights, these recipes will
+                      satisfy your sweet tooth. Learn the science of baking,
+                      master temperature control, and discover the joy of
+                      creating beautiful pastries, cakes, and confections from
+                      scratch.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--reviews list-->
+    <section id="stories" class="bg-light">
+      <div class="container-lg">
+        <div class="text-center">
+          <h2><i class="bi bi-stars"></i>Kitchen Stories</h2>
+          <p class="lead">What our home chefs are saying...</p>
+        </div>
+        <div class="row justify-content-center my-5">
+          <div class="col-lg-8">
+            <div class="list-group">
+              <div class="list-group-item py-3">
+                <div class="pb-2">
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                </div>
+                <h5 class="mb-1">A Game-Changer for Family Meals</h5>
+                <p class="mb-1">
+                  This collection revolutionized my family dinners! The
+                  step-by-step instructions made even complex dishes
+                  approachable.
+                </p>
+                <small>- Sarah M.</small>
+              </div>
+
+              <div class="list-group-item py-3">
+                <div class="pb-2">
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                </div>
+                <h5 class="mb-1">Time-Saving Magic in the Kitchen"</h5>
+                <p class="mb-1">
+                  The seasonal menu planning saved me so much time. My kids now
+                  look forward to helping in the kitchen! What used to be a
+                  stressful daily challenge has transformed into a fun family
+                  activity. The prep-ahead tips are worth their weight in gold.
+                </p>
+                <small>- James P.</small>
+              </div>
+
+              <div class="list-group-item py-3">
+                <div class="pb-2">
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                </div>
+                <h5 class="mb-1">Nostalgia Meets Modern Cooking</h5>
+                <p class="mb-1">
+                  These recipes brought back memories of my grandmother's
+                  cooking. Simple ingredients, extraordinary flavors. I
+                  especially love how traditional recipes are updated with
+                  modern twists while keeping their authentic soul. Every dish
+                  tells a story.
+                </p>
+                <small>- Maria R.</small>
+              </div>
+
+              <div class="list-group-item py-3">
+                <div class="pb-2">
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-half"></i>
+                  <i class="bi bi-star"></i>
+                </div>
+                <h5 class="mb-1">Perfect for Beginners</h5>
+                <p class="mb-1">
+                  As someone who could barely boil water, this collection gave
+                  me the confidence to try new recipes. The detailed
+                  explanations and troubleshooting tips helped me understand not
+                  just what to do, but why. Now I'm hosting dinner parties!
+                </p>
+                <small>- Alex K.</small>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--contact form-->
+
+    <!--form-control, form-label, form-select, input-group, input-group-text-->
+    <section id="contact">
+      <div class="container-lg">
+        <div class="text-center">
+          <h2>Get in Touch</h2>
+          <p class="lead">
+            Questions to ask? Fill form to contact me directly...
+          </p>
+        </div>
+        <div class="row justify-content-center my-5">
+          <div class="col-lg-6">
+            <form>
+              <label for="email" class="form-label">Email Address:</label>
+              <div class="mb-4 input-group">
+                <input
+                  type="email"
+                  class="form-control"
+                  id="email"
+                  placeholder="e.g. mario@example.com"
+                />
+                <span class="input-group-text">
+                  <span
+                    class="tt"
+                    data-bs-placement="bottom"
+                    title="Enter an email address we can reply to"
+                  >
+                    <i class="bi bi-question-circle text-muted"></i>
+                  </span>
+                </span>
+              </div>
+
+              <label for="name" class="form-label">Name:</label>
+              <div class="input-group mb-4">
+                <span class="input-group-text">
+                  <i class="bi bi-person-fill"></i>
+                </span>
+
+                <input
+                  type="text"
+                  class="form-control"
+                  id="name"
+                  placeholder="e.g. Mario"
+                />
+                <span class="input-group-text">
+                  <span
+                    class="tt"
+                    data-bs-placement="bottom"
+                    title="Pretty self explanatory really..."
+                  >
+                    <i class="bi bi-question-circle text-muted"></i>
+                  </span>
+                </span>
+              </div>
+
+              <label for="subject" class="form-label"
+                >What is your question about?</label
+              >
+              <div class="input-group mb-4">
+                <span class="input-group-text">
+                  <i class="bi bi-chat-right-dots-fill"></i>
+                </span>
+                <select class="form-select" id="subject">
+                  <option value="recipe" selected>Recipe Help</option>
+                  <option value="ingredients">Ingredient Substitutions</option>
+                  <option value="meal planning">Meal Planning Advice</option>
+                  <option value="general">General Questions</option>
+                </select>
+              </div>
+
+              <div class="form-floating mb-4 mt-5">
+                <textarea
+                  id="query"
+                  class="form-control"
+                  style="height: 140px"
+                ></textarea>
+                <label for="query" class="form-label">Your query...</label>
+              </div>
+
+              <div class="mb-4 text-center">
+                <button type="submit" class="btn btn-secondary">Submit</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--get updates / modal trigger-->
+    <section class="bg-light">
+      <div class="container">
+        <div class="text-center">
+          <h2>Join Our Kitchen Community</h2>
+          <p class="lead">Get Fresh Recipes Delivered to Your Inbox</p>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col-md-8 text-center">
+            <p class="text-muted my-4">
+              Never miss a new recipe! Subscribe to receive weekly cooking
+              inspiration, seasonal menu ideas, and exclusive culinary tips.
+              Join thousands of home chefs who are already creating magic in
+              their kitchens with our recipes.
+            </p>
+            <button
+              class="btn btn-primary"
+              data-bs-toggle="modal"
+              data-bs-target="#reg-modal"
+            >
+              Get Fresh Recipes
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--modal itself-->
+    <div
+      class="modal fade"
+      id="reg-modal"
+      tabindex="-1"
+      aria-labelledby="modal-title"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="modal-title">
+              Join Our Culinary Adventure!
+            </h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <p>
+              Subscribe to receive <br />
+              <br />
+              • Weekly curated recipe collections <br />
+              • Exclusive seasonal meal plans <br />
+              • Expert cooking tips and tricks <br />
+              • Early access to new recipes <br />
+              • Free kitchen organization guides <br />
+              • Members-only discounts on cooking tools <br />
+              <br />
+
+              Plus, get our free e-cookbook '30 Quick & Delicious Family
+              Dinners' when you sign up today!
+            </p>
+            <label for="modal-email" class="form-label"
+              >Your email address:</label
+            >
+            <input
+              type="email"
+              class="form-control"
+              id="modal-email"
+              placeholder="e.g. mario@example.com"
+            />
+          </div>
+          <div class="modal-footer">
+            <button class="btn btn-primary">Submit</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--offcanvas-->
+
+    <div
+      class="offcanvas offcanvas-start"
+      tabindex="-1"
+      id="sidebar"
+      aria-labelledby="sidebar-label"
+    >
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="sidebar-label">My Other Books</h5>
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="offcanvas"
+          aria-label="Close"
+        ></button>
+      </div>
+      <div class="offcanvas-body">
+        <p>
+          Explore our specialized recipe collections, each carefully curated to
+          help you master different aspects of cooking. From quick weeknight
+          dinners to elaborate holiday feasts, find the perfect recipes for
+          every occasion and skill level.
+        </p>
+
+        <!--dropdown-->
+        <div class="dropdown mt-3">
+          <button
+            class="btn btn-secondary dropdown-toggle"
+            type="button"
+            id="book-dropdown"
+            data-bs-toggle="dropdown"
+          >
+            Choose Your Cooking Journey
+          </button>
+          <ul class="dropdown-menu" aria-labelledby="book-dropdown">
+            <li>
+              <a href="#" class="dropdown-item">Seasonal & Holiday Feasts</a>
+            </li>
+            <li>
+              <a href="#" class="dropdown-item">World Kitchen Adventures</a>
+            </li>
+            <li>
+              <a href="#" class="dropdown-item">Quick & Easy Weeknight Meals</a>
+            </li>
+            <li>
+              <a href="#" class="dropdown-item">Healthy & Mindful Eating</a>
+            </li>
+            <li>
+              <a href="#" class="dropdown-item">Baking & Pastry Mastery</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      const tooltips = document.querySelectorAll(".tt");
+      tooltips.forEach((t) => {
+        new bootstrap.Tooltip(t);
+      });
+    </script>
+  </body>
+</html>
